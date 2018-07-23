@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="296dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/item_sosot"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_search"
+                android:layout_width="296dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:drawableLeft="@mipmap/search"
+                android:hint="@string/search" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignEnd="@+id/edit_search"
+            android:src="@mipmap/share" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/hot"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/item_sosot"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/top_left"
+                android:layout_width="172dp"
+                android:layout_height="97dp"
+                android:layout_alignParentTop="true"
+                android:src="@mipmap/ic_launcher"
+
+                />
+
+            <ImageView
+                android:id="@+id/top_right"
+                android:layout_width="172dp"
+                android:layout_height="97dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/top_left"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+
+                android:id="@+id/bottom"
+                android:layout_width="172dp"
+                android:layout_height="97dp"
+                android:layout_below="@+id/top_left"
+                android:src="@mipmap/ic_launcher"
+
+                />
+
+            <ImageView
+
+                android:id="@+id/bot_left"
+                android:layout_width="172dp"
+                android:layout_height="97dp"
+                android:layout_below="@id/top_left"
+
+                android:src="@mipmap/ic_launcher"
+
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/anser"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+        </ListView>
+    </ScrollView>
+
+</LinearLayout>

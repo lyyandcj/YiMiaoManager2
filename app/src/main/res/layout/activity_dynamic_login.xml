@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp">
+
+        <ImageView
+            android:id="@+id/img_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/gunbi" />
+
+        <TextView
+            android:id="@+id/text_regest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:text="注册" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_sign"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="62dp"
+            android:src="@mipmap/sign" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:id="@+id/ed_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="36dp"
+            android:cursorVisible="true"
+            android:theme="@style/MyEditText"
+            android:drawableLeft="@mipmap/phone"
+            android:hint="请输入手机号/邮箱/用户名"
+            android:minHeight="14dp"
+            android:singleLine="true"
+            android:textColorHint="#BCBCBC"
+            android:textCursorDrawable="@null" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ed_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="21dp"
+                android:cursorVisible="true"
+                android:theme="@style/MyEditText"
+                android:drawableLeft="@mipmap/pass"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:minHeight="14dp"
+                android:textColorHint="#BCBCBC"
+                android:textCursorDrawable="@null" />
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/ed_pwd"
+                android:layout_alignBottom="@+id/ed_pwd"
+                android:layout_alignEnd="@id/ed_pwd"
+                android:layout_marginRight="39dp"
+                android:layout_marginEnd="14dp"
+                android:text="|   请输入密码"
+                android:textSize="13dp"
+                android:textColor="#666666" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="315dp"
+            android:layout_height="44dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_zh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:textColor="#46E3E7"
+            android:textSize="15sp"
+            android:text="动态密码登录" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <View
+            android:id="@+id/layout"
+            android:layout_width="115dp"
+            android:layout_height="1px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="30dp"
+            android:background="#b7b7b7" />
+        <!--  -->
+        <TextView
+            android:id="@+id/tv_qita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:text="其他登录方式" />
+
+        <View
+            android:id="@+id/layoutd"
+            android:layout_width="115dp"
+            android:layout_height="1px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="30dp"
+            android:background="#b7b7b7" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="130dp"
+            android:src="@mipmap/weixin" />
+    </RelativeLayout>
+</LinearLayout>
